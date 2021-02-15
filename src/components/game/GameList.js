@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { GameContext } from "./GameProvider.js";
+import "./game.css";
 
 export const GameList = (props) => {
   const history = useHistory();
@@ -23,7 +24,7 @@ export const GameList = (props) => {
       {games.map((game) => {
         return (
           <section key={`game--${game.id}`} className="game">
-            <div className="game__title">{game.title}</div>
+            <div className="game__title">Game: {game.title}</div>
             <div className="game__players">
               {game.number_of_players} players needed
             </div>

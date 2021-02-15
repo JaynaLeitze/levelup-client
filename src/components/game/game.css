@@ -1,0 +1,10 @@
+.games {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.game {
+  border: 3px aqua dotted;
+  max-width: 300;
+  padding: 15px;
+}
